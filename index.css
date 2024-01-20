@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+    color: #FFB300;
+    border-bottom: 2px solid #FFB300;;
+}
+
+.card{
+    width: 30rem;
+}
+
+h1{
+    color: white;
+}
+
+textarea {
+    margin: 36px 0 36px 0;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+
+textarea:focus{
+    outline: none;
+}
+
+select {
+    width: 70%;
+    background-color: #5C6BC0;
+    height: 2rem;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+select:focus{
+    outline: none;
+}
+
+button {
+    position: relative;
+    width: 7rem;
+    height: 2rem;
+    left: 22px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #FFB300;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 426px) {
+    .card{
+        width: 20rem;
+    }
+    h1{
+        padding-left: 1rem;
+    }
+    textarea{
+        width: 20rem;
+    }
+
+    select{
+        width: 9rem;
+        margin-left: 1rem;
+    }
+    select option{
+        background-color: #010758;
+        padding: 5px 10px;
+    }
+}
